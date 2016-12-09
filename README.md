@@ -17,6 +17,24 @@ Software Craftsperson
 
 
 
+# Fast
+### Iterations to Production
+# For Everyone
+
+(on mobile platforms)
+
+
+
+## As Industry
+#### We Need to
+# Push Forward
+#### and
+# Reject Manual Review
+## As Bad Practice
+
+
+
+### The Problem:
 # Mobile Waterfall
 
 
@@ -50,10 +68,44 @@ Software Craftsperson
 
 
 
-## Getting our Feedback Back
+#### Question:
+## Aren't Beta Users Enough?
 
 
-### Domain-Specific Language
+#### Counter-Question:
+## Can We Deploy 10 Versions
+# At The Same Time?
+
+
+# Getting our Feedback Back
+
+
+## Build the Web App
+
+> The (Native) App is Dead; Long Live the (Web) App
+
+_ https://thejournal.com/articles/2015/10/05/the-app-is-dead.aspx _
+
+
+## Run the Web App in a Web View
+
+
+## Dynamic Platform on Mobile
+
+(e.g.: Javascript + React Native)
+
+
+## Roll Your Own Solution
+
+
+- Web App
+- Web View + Web App
+- Dynamic Platform
+- ### Roll Your Own
+
+
+
+## Domain-Specific Language
 
 deployed to your servers
 
@@ -87,6 +139,114 @@ We would like to show them recommendations
 </div>
 
 
+<div class="presented-code presented-code--with-highlights">
+
+{
+  <span class="presented-code__highlight">"name": "RecommendationService"</span>,
+  "subscribe": {
+    "event": "liked_item",
+    "actions": [
+      {
+        "request":
+          "/recommendations/${event.item_id}",
+        "publish": "rcv_recommendations"
+      }
+    ]
+  }
+}
+</div>
+
+
+<div class="presented-code presented-code--with-highlights">
+
+{
+  "name": "RecommendationService",
+  <span class="presented-code__highlight">"subscribe"</span>: {
+    <span class="presented-code__highlight alternative">"event": "liked_item"</span>,
+    "actions": [
+      {
+        "request":
+          "/recommendations/${event.item_id}",
+        "publish": "rcv_recommendations"
+      }
+    ]
+  }
+}
+</div>
+
+
+<div class="presented-code presented-code--with-highlights">
+
+{
+  "name": "RecommendationService",
+  "subscribe": {
+    "event": "liked_item",
+    <span class="presented-code__highlight">"actions": [
+      {
+        "request":
+          "/recommendations/${event.item_id}",
+        "publish": "rcv_recommendations"
+      }
+    ]</span>
+  }
+}
+</div>
+
+
+<div class="presented-code presented-code--with-highlights">
+
+{
+  "name": "RecommendationService",
+  "subscribe": {
+    "event": "liked_item",
+    "actions": [
+      {
+        <span class="presented-code__highlight">"request"</span>:
+          <span class="presented-code__highlight alternative">"/recommendations/${event.item_id}"</span>,
+        "publish": "rcv_recommendations"
+      }
+    ]
+  }
+}
+</div>
+
+
+<div class="presented-code presented-code--with-highlights">
+
+{
+  "name": "RecommendationService",
+  "subscribe": {
+    "event": "liked_item",
+    "actions": [
+      {
+        "request":
+          "/recommendations/${event.item_id}",
+        <span class="presented-code__highlight">"publish"</span>: <span class="presented-code__highlight alternative">"rcv_recommendations"</span>
+      }
+    ]
+  }
+}
+</div>
+
+
+<div class="presented-code">
+$ curl example.org/srv/recommendations
+{
+  "name": "RecommendationService",
+  "subscribe": {
+    "event": "liked_item",
+    "actions": [
+      {
+        "request":
+          "/recommendations/${event.item_id}",
+        "publish": "rcv_recommendations"
+      }
+    ]
+  }
+}
+</div>
+
+
 <div class="presented-code">
 
 {
@@ -95,13 +255,130 @@ We would like to show them recommendations
     "event": "rcv_recommendations",
     "actions": [
       {
-        "render": { view": "item_list",
+        "render": { "view": "item_list",
             "data": "${event.response.items}" }
       }
     ]
   }
 }
 </div>
+
+
+<div class="presented-code presented-code--with-highlights">
+
+{
+  <span class="presented-code__highlight">"name": "RecommendationRenderService"</span>,
+  "subscribe": {
+    "event": "rcv_recommendations",
+    "actions": [
+      {
+        "render": { "view": "item_list",
+            "data": "${event.response.items}" }
+      }
+    ]
+  }
+}
+</div>
+
+
+<div class="presented-code presented-code--with-highlights">
+
+{
+  "name": "RecommendationRenderService",
+  <span class="presented-code__highlight">"subscribe"</span>: {
+    <span class="presented-code__highlight alternative">"event": "rcv_recommendations"</span>,
+    "actions": [
+      {
+        "render": { "view": "item_list",
+            "data": "${event.response.items}" }
+      }
+    ]
+  }
+}
+</div>
+
+
+<div class="presented-code presented-code--with-highlights">
+
+{
+  "name": "RecommendationRenderService",
+  "subscribe": {
+    "event": "rcv_recommendations",
+    <span class="presented-code__highlight">"actions": [
+      {
+        "render": { "view": "item_list",
+            "data": "${event.response.items}" }
+      }
+    ]</span>
+  }
+}
+</div>
+
+
+<div class="presented-code presented-code--with-highlights">
+
+{
+  "name": "RecommendationRenderService",
+  "subscribe": {
+    "event": "rcv_recommendations",
+    "actions": [
+      {
+        <span class="presented-code__highlight">"render"</span>: { <span class="presented-code__highlight alternative">"view": "item_list"</span>,
+            "data": "${event.response.items}" }
+      }
+    ]
+  }
+}
+</div>
+
+
+<div class="presented-code presented-code--with-highlights">
+
+{
+  "name": "RecommendationRenderService",
+  "subscribe": {
+    "event": "rcv_recommendations",
+    "actions": [
+      {
+        <span class="presented-code__highlight">"render"</span>: { "view": "item_list",
+            <span class="presented-code__highlight alternative">"data": "${event.response.items}"</span> }
+      }
+    ]
+  }
+}
+</div>
+
+
+<div class="presented-code">
+$ curl example.org/srv/recommendations-render
+{
+  "name": "RecommendationRenderService",
+  "subscribe": {
+    "event": "rcv_recommendations",
+    "actions": [
+      {
+        "render": { "view": "item_list",
+            "data": "${event.response.items}" }
+      }
+    ]
+  }
+}
+</div>
+
+
+<div class="presented-code">
+$ curl example.org/srv/
+{
+  "services": [
+    "/srv/item-catalog",
+    "/srv/recommendations",
+    "/srv/recommendations-render"
+  ]
+}
+</div>
+
+
+## Meta Programming
 
 
 ### Trade-offs
@@ -112,8 +389,6 @@ We would like to show them recommendations
 
 
 ### DSL => Programming Language
-
-for example: Javascript + React Native
 
 
 
@@ -164,12 +439,7 @@ for example: Javascript + React Native
 
 
 
-## Recap and Q&A
-
-- Mobile Waterfall
-- Domain-Specific Language & Example
-- Trade-offs
-- "MicroServices" architecture in that DSL
+## Q&A
 
 
 
