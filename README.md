@@ -427,7 +427,14 @@ $ curl example.org/srv/
 
 
 
-## Bottom Line
+## The Best Alternative
+
+(not technical and political)
+
+
+### Just Iterate
+## On Mobile Platforms
+# Quickly
 
 
 ## As Industry
