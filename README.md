@@ -1,6 +1,6 @@
 # MicroServices and Mobile
 
-<!-- (APIdays Paris 2016) -->
+(APIdays 2016, Paris)
 
 
 
@@ -447,6 +447,10 @@ $ curl example.org/srv/
 
 
 ## Q&A
+
+
+
+# Demo
 
 
 
