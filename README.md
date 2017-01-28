@@ -452,6 +452,9 @@ $ curl example.org/srv/
 
 # Demo
 
+- iOS/Swift App: https://github.com/waterlink/LikeyLikes
+- Stub Static API: https://github.com/waterlink/LikeyLikesStatic
+- Demo Video: https://git.io/vDJKG
 
 
 ## Thanks
