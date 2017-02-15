@@ -1,6 +1,6 @@
 # MicroServices and Mobile
 
-(APIdays 2016, Paris)
+(microXchg 2017, Berlin)
 
 
 
@@ -85,6 +85,23 @@ Software Craftsperson
 > The (Native) App is Dead; Long Live the (Web) App
 
 _ https://thejournal.com/articles/2015/10/05/the-app-is-dead.aspx _
+
+
+### Web App - Pros
+
+- Almost no knowledge of the mobile platform required
+- Effectively, write code only once: for web and mobile
+
+
+### Web App - Cons
+
+- Native app features are unavailable
+- Users do not discover the app where they are used to
+- Lower chances of repeated usage
+- Can not execute in a background mode
+
+
+## Build the Progressive Web App
 
 
 ## Run the Web App in a Web View
