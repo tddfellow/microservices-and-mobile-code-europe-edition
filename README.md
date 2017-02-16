@@ -37,6 +37,10 @@ Software Craftsperson
 ### The Problem:
 # Mobile Waterfall
 
+> That is Waterfall. Right there.
+
+_ [tddfellow.com/blog/2016/12/07/mobile-waterfall-being-agile-again/](http://www.tddfellow.com/blog/2016/12/07/mobile-waterfall-being-agile-again/) _
+
 
 #### 2-4 Day
 # Manual
@@ -89,19 +93,39 @@ _ https://thejournal.com/articles/2015/10/05/the-app-is-dead.aspx _
 
 ### Web App - Pros
 
-- Almost no knowledge of the mobile platform required
-- Effectively, write code only once: for web and mobile
+- No knowledge of the mobile platform required
+- Write code only once: for web and mobile
+- Only one deployment strategy
+- No "installation" required
+- Portable
+- Linkable and shareable
+- Always up-to-date
 
 
 ### Web App - Cons
 
 - Native app features are unavailable
-- Users do not discover the app where they are used to
-- Lower chances of repeated usage
+- Users do not discover the app where used to
+- Lower chances of regular usage (on avg.)
 - Can not execute in a background mode
+- Unlikely to save the app to the home screen
 
 
-## Build the Progressive Web App
+## Build Progressive Web App
+
+> Utilizes modern web tech to deliver native-like experience
+
+
+### Progressive Web App - Pros
+
+- Write code only once: for web and mobile
+- Only one deployment strategy
+- "Installs" to the home screen
+
+
+### Progressive Web App - Cons
+
+- Need to teach user about "Save to home screen"
 
 
 ## Run the Web App in a Web View
