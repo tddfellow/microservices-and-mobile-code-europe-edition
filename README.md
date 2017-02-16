@@ -84,7 +84,7 @@ _ [tddfellow.com/blog/2016/12/07/mobile-waterfall-being-agile-again/](http://www
 # Getting our Feedback Back
 
 
-## Build the Web App
+## Build the Responsive Web App
 
 > The (Native) App is Dead; Long Live the (Web) App
 
@@ -109,6 +109,7 @@ _ https://thejournal.com/articles/2015/10/05/the-app-is-dead.aspx _
 - Lower chances of regular usage (on avg.)
 - Can not execute in a background mode
 - Unlikely to save the app to the home screen
+- Slow performance
 
 
 ## Build Progressive Web App
@@ -118,30 +119,55 @@ _ https://thejournal.com/articles/2015/10/05/the-app-is-dead.aspx _
 
 ### Progressive Web App - Pros
 
-- Write code only once: for web and mobile
-- Only one deployment strategy
+- Just like a web app
+- Emulated native app look and feel
+- \* Has access to native features
 - "Installs" to the home screen
+- Higher chances of regular usage
 
 
 ### Progressive Web App - Cons
 
-- Need to teach user about "Save to home screen"
+- Teaching user to "Save to home screen"
+- Slow performance
+- Cross-platform support is low, e.g.
+
+  _ on some platforms: _
+
+  - can not execute in background
+  - can not send push notifications
+  - can not access hardware features
 
 
-## Run the Web App in a Web View
+## Run the Hybrid App
+
+> Best and Worst of Native & HTML5
 
 
-## Dynamic Platform on Mobile
+### Hybrid App - Pros
 
-(e.g.: Javascript + React Native)
+- Mostly, still a web app
+- Native app
+- Native look and feel is emulated
+- All native & hardware features
+- Kind of portable
+- Installs via the application store
+- Regular usage is on par with Native App
+- \* Quicker deployment cycles
+
+
+### Hybrid App - Cons
+
+- Slow performance
+- Requires more development skills
 
 
 ## Roll Your Own Solution
 
 
-- Web App
-- Web View + Web App
-- Dynamic Platform
+- Responsive Web App
+- Progressive Web App
+- Hybrid App
 - ### Roll Your Own
 
 
@@ -427,9 +453,15 @@ $ curl example.org/srv/
 - Might get rejected
 - Complexity of DSL implementation
 - 5-10% still deployed "old-school"
+- Can choose different trade-offs:
+
+  - performance
+  - development cycles
+  - cost-efficiency
+  - etc.
 
 
-### DSL => Programming Language
+### DSL => Hybrid + Programming Language
 
 
 
