@@ -12,8 +12,14 @@ Software Crafter
 
 [@waterlink000](https://twitter.com/waterlink000)
 
+Note:
+I am Software Engineer, Software Crafter, I practice eXtreme programming and LEAN and I call myself TDD Fellow. Also, I blog and mentor.
+
 
 <!-- -- data-background="url(./Pivotal_WhiteOnTeal.png) no-repeat center" data-background-size="cover"  -->
+
+Note:
+I work at Pivotal Labs as a software engineer and a consultant.
 
 
 
@@ -45,6 +51,9 @@ _ [tddfellow.com/blog/2016/12/07/mobile-waterfall-being-agile-again/](http://www
 #### 2-4 Day
 # Manual
 #### Review Releases
+
+Note:
+1) package build; 2) upload to vendor; 3) push button in vendor UI; 4) vendor verifies security and TOS concerns in a half-automated way; 5) wait half week; 6) reject; 7) fix problem; 8) repeat.
 
 
 #### Bug Fix?
@@ -462,6 +471,13 @@ $ curl example.org/srv/
 
 
 ### DSL => Hybrid + Programming Language
+
+
+
+## MicroServices Properties
+
+Note:
+Componentization, Bounded Contexts, Single Responsibility, Loose Coupling, Independent Deployability, --Independent-Scalability--, Decentralization, Evolutionary Design, Independent Replaceability and Independent Upgradeability.
 
 
 
