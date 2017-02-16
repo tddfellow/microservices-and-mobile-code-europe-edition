@@ -8,7 +8,7 @@
 
 ## Oleksii Fedorov
 
-Software Craftsperson
+Software Crafter
 
 [@waterlink000](https://twitter.com/waterlink000)
 
