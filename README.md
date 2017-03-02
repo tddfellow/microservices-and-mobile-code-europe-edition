@@ -1,6 +1,6 @@
 # MicroServices and Mobile
 
-(microXchg 2017, Berlin)
+(TopConf 2017, Linz)
 
 
 
@@ -33,7 +33,7 @@ I work at Pivotal Labs as a software engineer and a consultant.
 
 ## As Industry
 #### We Need to
-# Push Forward
+# Advance Forward
 #### and
 # Reject Manual Review
 ## As Bad Practice
@@ -462,12 +462,14 @@ $ curl example.org/srv/
 - Might get rejected
 - Complexity of DSL implementation
 - 5-10% still deployed "old-school"
-- Can choose different trade-offs:
 
-  - performance
-  - development cycles
-  - cost-efficiency
-  - etc.
+
+### Choose your own trade-off
+
+- performance
+- development cycles
+- cost-efficiency
+- etc.
 
 
 ### DSL => Hybrid + Programming Language
@@ -528,7 +530,7 @@ Componentization, Bounded Contexts, Single Responsibility, Loose Coupling, Indep
 
 ## As Industry
 #### We Need to
-# Push Forward
+# Advance Forward
 #### and
 # Reject Manual Review
 ## As Bad Practice
@@ -542,7 +544,7 @@ Componentization, Bounded Contexts, Single Responsibility, Loose Coupling, Indep
 # Demo
 
 - iOS/Swift App: https://github.com/waterlink/LikeyLikes
-- Stub Static API: https://github.com/waterlink/LikeyLikesStatic
+- Fake Static API: https://github.com/waterlink/LikeyLikesStatic
 - Demo Video: https://git.io/vDJKG
 
 
