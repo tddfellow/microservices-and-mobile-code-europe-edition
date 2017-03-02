@@ -2,6 +2,8 @@
 
 (TopConf 2017, Linz)
 
+**slides: [bit.ly/microservices-mobile](http://bit.ly/microservices-mobile)**
+
 
 
 <img src="../my-presentation-template/me.jpeg" class="photo-me">
