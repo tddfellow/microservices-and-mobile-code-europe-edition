@@ -25,17 +25,99 @@ I work at Pivotal Labs as a software engineer and a consultant.
 
 
 
+## Tale of a
+# Single IF Statement
+
+
+## Backstory
+
+- App with places
+- Opening hours
+- 3rd party API
+
+Note:
+Johan and I were working on the mobile app. App was showing certain places on the map. Users were interested in the opening hours. We were using the external API provider to get the places' data. We were using the `opening-hours` field. API was returning opening hours for today. That is exactly what our users were interested in.
+
+
+<div class="presented-code">
+{
+  ...
+  "opening-hours": [
+    "9-14",
+    "17-23"
+  ],
+  ...
+}
+</div>
+
+Note:
+In the documentation it was a list of `starting hour` and `end hour` pairs. For example: `9-14, 17-23`.
+
+
+## Everything worked fine
+
+> This is fine!
+
+Note:
+Everything worked fine. Then we started getting bug reports for our app. Some places were showing really weird long numbers instead of hours. We struggled debugging this problem. It seemed non-reproducible. Finally, we got a hold of a specific place.
+
+
+<div class="presented-code center-text">
+Opening Hours: 1002740001 h -  h
+</div>
+
+Note:
+It would consistently show weird ten-digit number instead of opening hours. It was very challenging to find an error in our code. Everything seemed to work as expected. Finally, we realized, that the problem was not in our code. It was in our understanding how the external API worked. The API was indeed returning a ten-digit number instead of opening hours. It wasn't mentioned in the API documentation. We have contacted the support.
+
+
+<div class="presented-code">
+1002740001  ->  24/7
+1002740002  ->  only workdays
+1002740003  ->  only holidays
+...
+</div>
+
+Note:
+It turned out to be an undocumented feature of the API. Special values to indicate special cases, such as `24/7`, weekend-only, and others. They have sent us a list of 25 special numbers with their meaning. We had to support these special cases. We also had to render them differently in our mobile app.
+
+
+## Quick Fix for 24/7
+
+- one commit
+- one test
+- one `if` statement
+
+Note:
+This was already going on for weeks. Our users were frustrated. We had to do something fast. We did a quick search on our logging system. One of the special numbers occurred much more often than others. Like twenty times more often. It was `24/7` value. So we decided to deploy a quick fix for that number. It took us only one git commit to do that. One unit test and one if statement. We have deployed it.
+
+
+# 😊
+
+Note:
+And it immediately made majority of our users happy.
+
+
+# 😞
+
+Note:
+No, it didn't. I have just lied to you. We had to wait for Apple to review our new release for 5 days. Wouldn't it be great to be able to release immediately? Wouldn't it be great to deliver value as soon as you can?
+
+
+
 # Fast
 ### Iterations to Production
 # For Everyone
 
 (on mobile platforms)
 
+Note:
+Wouldn't it be great to have very fast iterations to production on mobile platforms?
+
 
 
 ## As Industry
 #### We Need to
-# Advance Forward
+# Advance
 #### and
 # Reject Manual Review
 ## As Bad Practice
