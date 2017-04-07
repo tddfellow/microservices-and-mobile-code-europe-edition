@@ -1,8 +1,8 @@
 # MicroServices and Mobile
 
-(TopConf 2017, Linz)
+(Code Forward 2.0, Warsaw)
 
-**slides: [bit.ly/microservices-mobile](http://bit.ly/microservices-mobile)**
+**slides: [bit.ly/microservices-mobile-2.0](http://bit.ly/microservices-mobile-2.0)**
 
 
 
@@ -152,7 +152,7 @@ _ https://thejournal.com/articles/2015/10/05/the-app-is-dead.aspx _
 
 ### Example Progressive Web App
 
-**these same slides: [bit.ly/microservices-mobile](http://bit.ly/microservices-mobile)**
+**these same slides: [bit.ly/microservices-mobile-2.0](http://bit.ly/microservices-mobile-2.0)**
 
 
 ## Run the Hybrid App
