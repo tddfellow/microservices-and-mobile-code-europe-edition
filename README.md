@@ -619,7 +619,7 @@ Componentization, Bounded Contexts, Single Responsibility, Loose Coupling, Indep
 
 ## As Industry
 #### We Need to
-# Advance Forward
+# Advance
 #### and
 # Reject Manual Review
 ## As Bad Practice
